@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WIP0</title>
-<link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIP0</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
+
 <body>
-<h1>These Days</h1>
+    <h1>These Days</h1>
 
-<button type="button"  id="button1" onclick="document.getElementById('button2').classList.remove('hidden');">These days, everything’s bad.</button>
+    <button type="button" id="button1" onclick="document.getElementById('button2').classList.remove('hidden');">These
+        days, everything’s bad.</button>
 
-<button type="button" class="hidden" id="button2" onclick="document.getElementById('button3').classList.remove('hidden');">The future waits in a button.</button>
+    <button type="button" class="hidden" id="button2"
+        onclick="document.getElementById('button3').classList.remove('hidden');">The future waits in a button.</button>
 
-<button type="button" class="hidden" id="button3" onclick="document.getElementById('button4').classList.remove('hidden');">No one plans, nobody says:</button>
+    <button type="button" class="hidden" id="button3"
+        onclick="document.getElementById('button4').classList.remove('hidden');">No one plans, nobody says:</button>
 
-<button type="button" class="hidden" id="button4" onclick="document.getElementById('input5').classList.remove('hidden');">Three years from now ... </button>
+    <button type="button" class="hidden" id="button4"
+        onclick="document.getElementById('input5').classList.remove('hidden');">Three years from now ... </button>
 
-<textarea rows="5" class="hidden" id="input5" placeholder="Then rifles, rockets—
+    <textarea rows="5" class="hidden" id="input5" placeholder="Then rifles, rockets—
 “O what a time, what a time!”"></textarea>
 
-<script></script>
-<style>
-.hidden {
-  display: none;
-}
+    <script></script>
+    <style>
+        .hidden {
+            display: none;
+        }
 
-#button2{
-    position:absolute;
-    left:30vw;
-    top:30vw;
-}
+        #button2 {
+            position: absolute;
+            left: 30vw;
+            top: 30vw;
+        }
 
-#button3{
-    position:absolute;
-    left:60vw;
-    top:10vw;
-}
+        #button3 {
+            position: absolute;
+            left: 60vw;
+            top: 10vw;
+        }
 
-#button4{
-    position:absolute;
-    left:70vw;
-    top:40vw;
-}
+        #button4 {
+            position: absolute;
+            left: 70vw;
+            top: 40vw;
+        }
 
-#input5{
-    position:absolute;
-    left:70vw;
-    top:45vw;
-    width: 20vw;
-}
+        #input5 {
+            position: absolute;
+            left: 70vw;
+            top: 45vw;
+            width: 20vw;
+        }
 
-</style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #button2,
+            #button3,
+            #button4,
+            #textArea5 {
+                position: static;
+                margin-top: 10px;
+            }
+        }
+    </style>
 </body>
+
 </html>
